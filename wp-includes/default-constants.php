@@ -42,9 +42,9 @@ function wp_initial_constants() {
 		if ( false === wp_is_ini_value_changeable( 'memory_limit' ) ) {
 			define( 'WP_MEMORY_LIMIT', $current_limit );
 		} elseif ( is_multisite() ) {
-			define( 'WP_MEMORY_LIMIT', '64M' );
+			define( 'WP_MEMORY_LIMIT', '120M' );
 		} else {
-			define( 'WP_MEMORY_LIMIT', '40M' );
+			define( 'WP_MEMORY_LIMIT', '110M' );
 		}
 	}
 
@@ -409,7 +409,7 @@ function wp_templating_constants() {
 	 * @see WP_Theme::get_core_default_theme()
 	 */
 	if ( ! defined( 'WP_DEFAULT_THEME' ) ) {
-		define( 'WP_DEFAULT_THEME', 'twentytwentytwo' );
+		define( 'WP_DEFAULT_THEME', 'twentytwentyone' );
 	}
 
 }
